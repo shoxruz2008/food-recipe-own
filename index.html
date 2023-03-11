@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+	<title>Food Recipe</title>
+</head>
+
+<body>
+	<svg style="display: none;">
+		<symbol viewBox="0 0 512 512" id="search-icon">
+			<g>
+				<path
+					d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+			</g>
+		</symbol>
+		<symbol viewBox="0 0 576 512" id="cart-plus">
+			<g>
+				<path
+					d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96zM252 160c0 11 9 20 20 20h44v44c0 11 9 20 20 20s20-9 20-20V180h44c11 0 20-9 20-20s-9-20-20-20H356V96c0-11-9-20-20-20s-20 9-20 20v44H272c-11 0-20 9-20 20z" />
+			</g>
+		</symbol>
+	</svg>
+	<header>
+		<div class="container">
+			<nav class="header-nav">
+				<div class="nav">
+					<a class="nav-logo" href="#">
+						<img src="images/Logo.png" alt="header logo">
+					</a>
+					<ul class="nav-links">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+				<div class="header-buttons">
+					<button class="sign-in">Sign in</button>
+					<button class="sign-up">Sign up</button>
+				</div>
+			</nav>
+			<div class="header-content">
+				<div class="header-title">
+					<h1>Chef</h1>
+					<h1>Academy</h1>
+					<h1>Secrets</h1>
+				</div>
+				<div class="header-img">
+					<img src="images/header-image.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- section -->
+	<section>
+		<div class="is-center">
+			<div class="search-bar">
+				<label for="search">
+					<svg class="search-icon">
+						<use xlink:href="#search-icon"></use>
+					</svg>
+				</label>
+				<input name="search" id="search" type="search" placeholder="Search for a recipe name...">
+			</div>
+		</div>
+		<div class="is-position">
+			<div class="select-box">
+				<p>Filter by:</p>
+				<div class="select" tabindex="1">
+					<input class="selectopt" name="test" type="radio" id="opt1" checked>
+					<label for="opt1" class="option">Italia</label>
+					<input class="selectopt" name="test" type="radio" id="opt2">
+					<label for="opt2" class="option">Uzbekistan</label>
+					<input class="selectopt" name="test" type="radio" id="opt3">
+					<label for="opt3" class="option">China</label>
+					<input class="selectopt" name="test" type="radio" id="opt4">
+					<label for="opt4" class="option">Japan</label>
+					<input class="selectopt" name="test" type="radio" id="opt5">
+					<label for="opt5" class="option">Korea</label>
+				</div>
+			</div>
+		</div>
+		<div class="section-content">
+			<aside>
+				<div class="sidebar">
+					<a class="menu-item ">
+						<h3>Beef</h3>
+					</a>
+					<a class="menu-item">
+						<h3>Breakfast</h3>
+					</a>
+					<a class="menu-item">
+						<h3>Chicken</h3>
+					</a>
+					<a class="menu-item">
+						<h3>Dessert</h3>
+					</a>
+					<a class="menu-item">
+						<h3>Goat</h3>
+					</a>
+					<a class="menu-item">
+						<h3>Lamb</h3>
+					</a>
+					<a class="menu-item">
+						<h3>Miscellaneous</h3>
+					</a>
+				</div>
+			</aside>
+			<main>
+				<div class="card-items">
+					<div class="card">
+						<div class="card-img">
+							<div class="card-btn">
+								<svg>
+									<use xlink:href="#cart-plus"></use>
+								</svg>
+							</div>
+							<img src="images/food images/meal 1.png" alt="">
+						</div>
+						<div class="card-content">
+							<div class="card-title">
+								Walnut Roll Gužvara
+							</div>
+							<div class="card-description">
+								<div class="card-frame">1 | Croatian | Nutty</div>
+								<div class="card-tag">Nutty</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img">
+							<div class="card-btn">
+								<svg>
+									<use xlink:href="#cart-plus"></use>
+								</svg>
+							</div>
+							<img src="images/food images/meal 1.png" alt="">
+						</div>
+						<div class="card-content">
+							<div class="card-title">
+								Walnut Roll Gužvara
+							</div>
+							<div class="card-description">
+								<div class="card-frame">2 | Croatian | Nutty</div>
+								<div class="card-tag">Nutty</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img">
+							<div class="card-btn">
+								<svg>
+									<use xlink:href="#cart-plus"></use>
+								</svg>
+							</div>
+							<img src="images/food images/meal 1.png" alt="">
+						</div>
+						<div class="card-content">
+							<div class="card-title">
+								Walnut Roll Gužvara
+							</div>
+							<div class="card-description">
+								<div class="card-frame">3 | Croatian | Nutty</div>
+								<div class="card-tag">Nutty</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img">
+							<div class="card-btn">
+								<svg>
+									<use xlink:href="#cart-plus"></use>
+								</svg>
+							</div>
+							<img src="images/food images/meal 1.png" alt="">
+						</div>
+						<div class="card-content">
+							<div class="card-title">
+								Walnut Roll Gužvara
+							</div>
+							<div class="card-description">
+								<div class="card-frame">4 | Croatian | Nutty</div>
+								<div class="card-tag">Nutty</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img">
+							<div class="card-btn">
+								<svg>
+									<use xlink:href="#cart-plus"></use>
+								</svg>
+							</div>
+							<img src="images/food images/meal 1.png" alt="">
+						</div>
+						<div class="card-content">
+							<div class="card-title">
+								Walnut Roll Gužvara
+							</div>
+							<div class="card-description">
+								<div class="card-frame">5 | Croatian | Nutty</div>
+								<div class="card-tag">Nutty</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img">
+							<div class="card-btn">
+								<svg>
+									<use xlink:href="#cart-plus"></use>
+								</svg>
+							</div>
+							<img src="images/food images/meal 1.png" alt="">
+						</div>
+						<div class="card-content">
+							<div class="card-title">
+								Walnut Roll Gužvara
+							</div>
+							<div class="card-description">
+								<div class="card-frame">6 | Croatian | Nutty</div>
+								<div class="card-tag">Nutty</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-img">
+							<div class="card-btn">
+								<svg>
+									<use xlink:href="#cart-plus"></use>
+								</svg>
+							</div>
+							<img src="images/food images/meal 1.png" alt="">
+						</div>
+						<div class="card-content">
+							<div class="card-title">
+								Walnut Roll Gužvara
+							</div>
+							<div class="card-description">
+								<div class="card-frame">7 | Croatian | Nutty</div>
+								<div class="card-tag">Nutty</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</section>
+	<script src="app.js"></script>
+</body>
+
+</html>
