@@ -17,14 +17,26 @@ const search = document.getElementById("search");
 
 const cardItems = document.querySelector(".card-items");
 
+const loader = document.getElementById("loader");
+
+function showLoader() {
+	loader.classList.add("show");
+}
+
+function hideLoader() {
+	loader.classList.remove("show");
+}
+
 search.addEventListener("keyup", (e) => {
 	if (e.keyCode == 13) {
 		let inputTxt = e.target.value.trim();
+		showLoader();
 		fetch(
 			`https://www.themealdb.com/api/json/v1/1/filter.php?i=${inputTxt}`
 		)
 			.then((response) => response.json())
 			.then((data) => {
+				hideLoader();
 				let html = "";
 				if (data.meals) {
 					data.meals.forEach((meal) => {

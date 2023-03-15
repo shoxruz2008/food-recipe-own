@@ -445,3 +445,26 @@ aside {
 	font-size: 30px;
 	font-weight: 600;
 }
+
+#loader {
+	display: none;
+}
+
+#loader.show {
+	display: block;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	border: 15px solid #eb9f45;
+	border-top-color: #e9406f;
+	animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+	from {
+		transform: rotate(0turn);
+	}
+	to {
+		transform: rotate(1turn);
+	}
+}
